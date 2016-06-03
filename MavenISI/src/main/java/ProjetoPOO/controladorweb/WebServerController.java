@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 //usar anotação @Controller para poder usar os formularios
 @Controller
-@RestController
+//@RestController
 @RequestMapping("/Controlador")
 public class WebServerController {
  
@@ -32,7 +32,7 @@ public class WebServerController {
 
     //o @requestMapping recebe um atributo chamado value que indica qual será a URL utilizada para chamar o método.
     @RequestMapping("aluno/adicionar")
-    public ResponseEntity<?> adicionarAluno(@RequestBody Aluno aluno) {
+    public ResponseEntity<?> adicionarAluno(/*@RequestBody*/ Aluno aluno) {
         try {
             System.out.println("chegou aqui");
             this.fachada.adicionarAluno(aluno);

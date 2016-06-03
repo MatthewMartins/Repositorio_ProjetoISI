@@ -19,6 +19,7 @@
 	<servlet-mapping>
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<url-pattern>/api/*</url-pattern>
+                
 	</servlet-mapping>
  
  

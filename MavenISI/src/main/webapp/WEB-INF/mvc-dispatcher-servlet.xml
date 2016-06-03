@@ -55,6 +55,7 @@ and open the template in the editor.
 				<entry key="html" value="text/html" />
 				<entry key="json" value="application/json" />
 				<entry key="xml" value="application/xml" />
+                 
 			</map>
 		</property>
 	</bean>
