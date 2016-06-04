@@ -1,26 +1,102 @@
 <%-- 
-    Document   : excluirAluno
-    Created on : 03/06/2016, 20:47:01
+    Document   : cadastroAluno
+    Created on : 17/05/2016, 15:58:02
     Author     : Matheus
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Excluir Aluno</h1>
-        <form action="Controlador/aluno/remover" method="post">
-            <h1>Digite o numero de matricula do aluno</h1>
-            <div> Numero de matricula <input type="text" name="numMatricula"> </div>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Excluir Aluno</title>
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/mavenprojetoISI/css/normalize.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="/mavenprojetoISI/css/style.css">
+    <link rel="stylesheet" href="/mavenprojetoISI/css/styles.css">
+     <link rel="stylesheet" type="text/css" href="/mavenprojetoISI/css/style.css" />
+  </head>
 
-            <input type="submit" value="Enviar">
+  <body>
+  	
+    	<h1>Academia FitPro - <span>Excluir Aluno</span></h1>
+    	<hr>
 
-        </form>
+        <div id="formulario">
+             <form action="Controlador/aluno/remover" method="post">
+    <fieldset>
+       
+      <fieldset>
+        <fieldset class="grupo">
+            <div class="campo">
+             
+                <label for="numMatricula">Nº da Matrícula</label>
+                <input type="text" id="numMatricula" name="numMatricula" style="width: 10em" value="" />
+            </div>
+            
+            
+ </fieldset>
+ 
+        <button type="submit">Excluir</button>
+ 
+    </fieldset>
+</form>
 
+</div>
 
-    </body>
+		<div id="nav" class="nav">
+			<div class="icon">
+				<ul>
+					</br></br></br></br>
+					<li><a href="index.html"><i class="fa fa-home "></i></a></li>
+					<li><a href="cadastroAluno"><i class="fa fa-plus-circle"></i></a></li>
+					<li><a href=""><i class="fa fa-close "></i></a></li>
+					<li><a href="#"><i class="fa fa-refresh"></i></a></li>
+					<li><a href="#"><i class="fa fa-search"></i></a></li>
+					<li><a href="About"><i class="	fa fa-sort-alpha-asc "></i></a></li>
+					<li><a href="#"><i class="fa fa-male"></i></a></li>
+					<li><a href="#"><i class="fa fa-edit "></i></a></li>
+
+				</ul>
+			</div>
+			
+			<div class="text">
+				<ul>
+				    </br></br></br></br>
+					<li><a href="index.html">Tela Inicial</a></li>
+					<li><a href="cadastroAluno" >Cadastrar Aluno</a></li>
+					<li><a href="" >Excluir Aluno</a></li>
+					<li><a href="#" >Alterar Dados</a></li>
+					<li><a href="#" >Pesquisar Aluno</a></li>
+					<li><a href="#" >Listar Alunos</a></li>
+					<li><a href="#" >Avaliar Aluno</a></li>
+					<li><a href="#" >Passar Treino</a></li>
+				</ul>
+			</div>
+ 
+    </div>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+         

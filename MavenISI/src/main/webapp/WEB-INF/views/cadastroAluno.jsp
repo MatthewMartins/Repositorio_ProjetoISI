@@ -9,7 +9,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Funcionário</title>
+    <title>Cadastrar Aluno</title>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/mavenprojetoISI/css/normalize.css">
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
@@ -20,7 +20,7 @@
 
   <body>
   	
-    	<h1>Academia FitPro - <span>Funcionário</span></h1>
+    	<h1>Academia FitPro - <span>Cadastrar Aluno</span></h1>
     	<hr>
 
         <div id="formulario">
@@ -87,9 +87,9 @@
 			<div class="icon">
 				<ul>
 					</br></br></br></br>
-					<li><a href="#"><i class="fa fa-home "></i></a></li>
-					<li><a href="api/cadastroAluno"><i class="fa fa-plus-circle"></i></a></li>
-					<li><a href="#"><i class="fa fa-close "></i></a></li>
+					<li><a href="index"><i class="fa fa-home "></i></a></li>
+					<li><a href=""><i class="fa fa-plus-circle"></i></a></li>
+					<li><a href="excluirAluno"><i class="fa fa-close "></i></a></li>
 					<li><a href="#"><i class="fa fa-refresh"></i></a></li>
 					<li><a href="#"><i class="fa fa-search"></i></a></li>
 					<li><a href="About"><i class="	fa fa-sort-alpha-asc "></i></a></li>
@@ -102,9 +102,9 @@
 			<div class="text">
 				<ul>
 				    </br></br></br></br>
-					<li><a href="#">Tela Inicial</a></li>
-					<li><a href="cadastrarAluno.jsp" >Cadastrar Aluno</a></li>
-					<li><a href="#" >Excluir Aluno</a></li>
+					<li><a href="index.html">Tela Inicial</a></li>
+					<li><a href="" >Cadastrar Aluno</a></li>
+					<li><a href="api/Controlador/excluirAluno" >Excluir Aluno</a></li>
 					<li><a href="#" >Alterar Dados</a></li>
 					<li><a href="#" >Pesquisar Aluno</a></li>
 					<li><a href="#" >Listar Alunos</a></li>
