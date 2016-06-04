@@ -40,8 +40,8 @@ public class FachadaImplementacao implements InterfaceFachada {
     }
 
     @Override
-    public List<ListarAluno> listarAluno() {
-        return this.alunos.listarAluno();
+    public List<ListarAluno> listarAlunos() {
+        return this.alunos.listarAlunos();
     }
 
     @Override

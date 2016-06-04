@@ -2,93 +2,93 @@ package ProjetoPOO.listar;
 
 public class ListarAluno {
 
-    private String listaNome;
-    private int listaIdade;
-    private String listaTelefone;
-    private String listaRua;
-    private String listaBairro;
-    private String listaCidade;
-    private long listaNumMatricula;
-    private String listaSenha;
+    private String nome;
+    private int idade;
+    private String telefone;
+    private String rua;
+    private String bairro;
+    private String cidade;
+    private long numMatricula;
+    private String senha;
     //private List<Treino> ListaTreinoAlunos;
     //private List<Avaliacao> listaAvaliacaoAlunos; 
 
     public ListarAluno() {
     }
 
-    public ListarAluno(String listaNome, int listaIdade, String listaTelefone, String listaRua, String listaBairro, String listaCidade, long listaNumMatricula, String listaSenha) {
-        this.listaNome = listaNome;
-        this.listaIdade = listaIdade;
-        this.listaTelefone = listaTelefone;
-        this.listaRua = listaRua;
-        this.listaBairro = listaBairro;
-        this.listaCidade = listaCidade;
-        this.listaNumMatricula = listaNumMatricula;
-        this.listaSenha = listaSenha;
+    public ListarAluno(String nome, int idade, String telefone, String rua, String bairro, String cidade, long numMatricula, String senha) {
+        this.nome = nome;
+        this.idade = idade;
+        this.telefone = telefone;
+        this.rua = rua;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.numMatricula = numMatricula;
+        this.senha = senha;
     }
 
-    public String getListaNome() {
-        return listaNome;
+    public String getNome() {
+        return nome;
     }
 
-    public void setListaNome(String listaNome) {
-        this.listaNome = listaNome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public int getListaIdade() {
-        return listaIdade;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setListaIdade(int listaIdade) {
-        this.listaIdade = listaIdade;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
-    public String getListaTelefone() {
-        return listaTelefone;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setListaTelefone(String listaTelefone) {
-        this.listaTelefone = listaTelefone;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
-    public String getListaRua() {
-        return listaRua;
+    public String getRua() {
+        return rua;
     }
 
-    public void setListaRua(String listaRua) {
-        this.listaRua = listaRua;
+    public void setRua(String rua) {
+        this.rua = rua;
     }
 
-    public String getListaBairro() {
-        return listaBairro;
+    public String getBairro() {
+        return bairro;
     }
 
-    public void setListaBairro(String listaBairro) {
-        this.listaBairro = listaBairro;
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
     }
 
-    public String getListaCidade() {
-        return listaCidade;
+    public String getCidade() {
+        return cidade;
     }
 
-    public void setListaCidade(String listaCidade) {
-        this.listaCidade = listaCidade;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 
-    public long getListaNumMatricula() {
-        return listaNumMatricula;
+    public long getNumMatricula() {
+        return numMatricula;
     }
 
-    public void setListaNumMatricula(long listaNumMatricula) {
-        this.listaNumMatricula = listaNumMatricula;
+    public void setNumMatricula(long numMatricula) {
+        this.numMatricula = numMatricula;
     }
 
-    public String getListaSenha() {
-        return listaSenha;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setListaSenha(String listaSenha) {
-        this.listaSenha = listaSenha;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     

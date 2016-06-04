@@ -9,7 +9,7 @@ public interface InterfaceAluno {
     public void adicionarAluno (Aluno aluno) throws AlunoExistenteException;
     public void atualizarAluno (Aluno aluno) throws AlunoInexistenteException;
     public void removerAluno (long numMatricula) throws AlunoInexistenteException;
-    public List<ListarAluno> listarAluno();
+    public List<ListarAluno> listarAlunos();
     public Aluno buscarIdAluno(long numMatricula) throws AlunoInexistenteException;
     
 }

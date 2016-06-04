@@ -14,7 +14,7 @@
     <body>
         <h1>Lista de Alunos</h1>
         
-        <form action="aluno/listar" method="GET">
+        <form action="aluno/listar" method="get">
             
             
         </form>

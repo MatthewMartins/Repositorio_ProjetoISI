@@ -59,19 +59,19 @@ public class NegocioAluno implements InterfaceAluno {
     }
 
     @Override
-    public List<ListarAluno> listarAluno(){
+    public List<ListarAluno> listarAlunos(){
         List<ListarAluno> retornaListaAlunos = new ArrayList<ListarAluno>();
         List<Aluno> aluno = (List<Aluno>) repositorioAluno.findAll();
         for(int i = 0; i<aluno.size(); i++){
             ListarAluno listarAluno = new ListarAluno(); 
-            listarAluno.setListaNome(aluno.get(i).getNome());
-            listarAluno.setListaIdade(aluno.get(i).getIdade());
-            listarAluno.setListaTelefone(aluno.get(i).getTelefone());
-            listarAluno.setListaRua(aluno.get(i).getRua());
-            listarAluno.setListaBairro(aluno.get(i).getBairro());
-            listarAluno.setListaCidade(aluno.get(i).getCidade());
-            listarAluno.setListaNumMatricula(aluno.get(i).getNumMatricula());
-            listarAluno.setListaSenha(aluno.get(i).getSenha());
+            listarAluno.setNome(aluno.get(i).getNome());
+            listarAluno.setIdade(aluno.get(i).getIdade());
+            listarAluno.setTelefone(aluno.get(i).getTelefone());
+            listarAluno.setRua(aluno.get(i).getRua());
+            listarAluno.setBairro(aluno.get(i).getBairro());
+            listarAluno.setCidade(aluno.get(i).getCidade());
+            listarAluno.setNumMatricula(aluno.get(i).getNumMatricula());
+            listarAluno.setSenha(aluno.get(i).getSenha());
             //List<Treino> treinoAlunos;
             //List<Avaliacao> avaliacaoAlunos;
             retornaListaAlunos.add(listarAluno);

@@ -16,6 +16,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 //usar anotação @Controller para poder usar os formularios
 @Controller
@@ -25,9 +26,9 @@ public class WebServerController {
     @Autowired
     private InterfaceFachada fachada;
     //aqui no listar talvez nao tenha o produces = MediaType...
-   @RequestMapping(value = "aluno/listar", headers="Accept=*/*", method = RequestMethod.GET /*, produces = MediaType.APPLICATION_JSON_VALUE*/)
-    public List<ListarAluno> listarAluno() {
-        return this.fachada.listarAluno();
+   @RequestMapping(value = "aluno/listar" /*, headers="Accept=*/, method = RequestMethod.GET) /*, produces = MediaType.APPLICATION_JSON_VALUE*/
+    public @ResponseBody List<ListarAluno> listarAlunos() {
+        return this.fachada.listarAlunos();
     }
 
     

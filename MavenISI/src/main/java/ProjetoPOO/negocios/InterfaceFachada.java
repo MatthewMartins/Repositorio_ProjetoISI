@@ -25,7 +25,7 @@ public interface InterfaceFachada {
 
     public void removerAluno(long numMatricula) throws AlunoInexistenteException;
 
-    public List<ListarAluno> listarAluno();
+    public List<ListarAluno> listarAlunos();
 
     public Aluno buscarIdAluno(long numMatricula) throws AlunoInexistenteException;
 
