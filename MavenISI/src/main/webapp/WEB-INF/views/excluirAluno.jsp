@@ -24,7 +24,7 @@
     	<hr>
 
         <div id="formulario">
-             <form action="Controlador/aluno/remover" method="post">
+             <form action="aluno/remover" method="post">
     <fieldset>
        
       <fieldset>

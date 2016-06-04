@@ -24,7 +24,7 @@
     	<hr>
 
         <div id="formulario">
-            <form action="Controlador/aluno/adicionar" method="post">
+            <form action="aluno/adicionar" method="post">
     <fieldset>
         <fieldset class="grupo">
             <div class="campo">
@@ -102,9 +102,9 @@
 			<div class="text">
 				<ul>
 				    </br></br></br></br>
-					<li><a href="index.html">Tela Inicial</a></li>
+					<li><a href="index">Tela Inicial</a></li>
 					<li><a href="" >Cadastrar Aluno</a></li>
-					<li><a href="api/Controlador/excluirAluno" >Excluir Aluno</a></li>
+					<li><a href="excluirAluno" >Excluir Aluno</a></li>
 					<li><a href="#" >Alterar Dados</a></li>
 					<li><a href="#" >Pesquisar Aluno</a></li>
 					<li><a href="#" >Listar Alunos</a></li>
