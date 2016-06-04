@@ -316,4 +316,8 @@ public class WebServerController {
         return "listarAluno";
     }
     
+    @RequestMapping("/buscarAluno")
+    public String formularioBuscarAluno(){
+        return "buscarAluno";
+    }
 }
