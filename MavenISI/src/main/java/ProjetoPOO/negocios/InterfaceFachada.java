@@ -10,6 +10,7 @@ import ProjetoPOO.entidades.Avaliacao;
 import ProjetoPOO.entidades.Exercicio;
 import ProjetoPOO.entidades.Funcionario;
 import ProjetoPOO.entidades.Treino;
+import ProjetoPOO.listar.ListarAluno;
 import java.util.List;
 
 /**
@@ -24,7 +25,7 @@ public interface InterfaceFachada {
 
     public void removerAluno(long numMatricula) throws AlunoInexistenteException;
 
-    public List<Aluno> listarAluno();
+    public List<ListarAluno> listarAluno();
 
     public Aluno buscarIdAluno(long numMatricula) throws AlunoInexistenteException;
 

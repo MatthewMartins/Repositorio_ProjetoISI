@@ -5,6 +5,7 @@ import ProjetoPOO.entidades.Avaliacao;
 import ProjetoPOO.entidades.Exercicio;
 import ProjetoPOO.entidades.Funcionario;
 import ProjetoPOO.entidades.Treino;
+import ProjetoPOO.listar.ListarAluno;
 import ProjetoPOO.negocios.InterfaceFachada;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 //usar anotação @Controller para poder usar os formularios
 @Controller
@@ -23,11 +25,12 @@ public class WebServerController {
     @Autowired
     private InterfaceFachada fachada;
     //aqui no listar talvez nao tenha o produces = MediaType...
-   @RequestMapping(value = "aluno/listar", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Aluno> listarAluno() {
+   @RequestMapping(value = "aluno/listar", headers="Accept=*/*", method = RequestMethod.GET /*, produces = MediaType.APPLICATION_JSON_VALUE*/)
+    public List<ListarAluno> listarAluno() {
         return this.fachada.listarAluno();
     }
 
+    
     //o @requestMapping recebe um atributo chamado value que indica qual será a URL utilizada para chamar o método.
     @RequestMapping("aluno/adicionar")
     public ResponseEntity<?> adicionarAluno(Aluno aluno) {
@@ -300,6 +303,16 @@ public class WebServerController {
    @RequestMapping("/excluirAluno")
     public String formularioExcluirAluno(){
         return "excluirAluno";
+    }
+    
+    @RequestMapping("/atualizarAluno")
+    public String formularioAtualizarAluno(){
+        return "atualizarAluno";
+    }
+    
+    @RequestMapping("/listarAluno")
+    public String formularioListarAluno(){
+        return "listarAluno";
     }
     
 }
