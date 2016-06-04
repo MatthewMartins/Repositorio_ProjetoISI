@@ -14,11 +14,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 //usar anotação @Controller para poder usar os formularios
 @Controller
-//@RestController
 @RequestMapping("/Controlador")
 public class WebServerController {
  
@@ -32,9 +30,8 @@ public class WebServerController {
 
     //o @requestMapping recebe um atributo chamado value que indica qual será a URL utilizada para chamar o método.
     @RequestMapping("aluno/adicionar")
-    public ResponseEntity<?> adicionarAluno(/*@RequestBody*/ Aluno aluno) {
+    public ResponseEntity<?> adicionarAluno(Aluno aluno) {
         try {
-            System.out.println("chegou aqui");
             this.fachada.adicionarAluno(aluno);
         } catch (Exception e) {
             return new ResponseEntity<Exception>(e, HttpStatus.BAD_REQUEST);
@@ -43,7 +40,7 @@ public class WebServerController {
     }
 
     @RequestMapping("aluno/atualizar"/*, produces = MediaType.APPLICATION_JSON_VALUE*/)
-    public ResponseEntity<?> atualizarAluno(@RequestBody Aluno aluno) {
+    public ResponseEntity<?> atualizarAluno( Aluno aluno) {
 
         try {
             this.fachada.atualizarAluno(aluno);
@@ -300,6 +297,9 @@ public class WebServerController {
         return "cadastroAluno";
     }
     
-    
+   @RequestMapping("/excluirAluno")
+    public String formularioExcluirAluno(){
+        return "excluirAluno";
+    }
     
 }
