@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="/mavenprojetoISI/css/style.css">
     <link rel="stylesheet" href="/mavenprojetoISI/css/styles.css">
      <link rel="stylesheet" type="text/css" href="/mavenprojetoISI/css/style.css" />
+        <script>    
+    if(typeof window.history.pushState == 'function') {
+        window.history.pushState({}, "Hide", "http://localhost:8084/mavenprojetoISI/");
+    }
+</script>
   </head>
 
   <body>
@@ -18,7 +23,7 @@
     	<hr>
 
         <div id="formulario">
-             <form action="aluno/atualizar" method="post">
+             <form action="api/Controlador/aluno/atualizar" method="post">
                  
        <fieldset>
         <fieldset class="grupo">
@@ -84,12 +89,12 @@
 					</br></br></br></br>
 					<li><a href=""><i></i></a></li>
                                         <li><a href=""><i></i></a></li>
-                                         <li><a href="index"><i class="fa fa-home"></i></a></li>
-                                        <li><a href="cadastroAluno"><i class="fa fa-plus-circle"></i></a></li>
-					<li><a href="excluirAluno"><i class="fa fa-close "></i></a></li>
-					<li><a href=""><i class="fa fa-refresh"></i></a></li>
-					<li><a href="buscarAluno"><i class="fa fa-search"></i></a></li>
-					<li><a href="aluno/listar"><i class="fa fa-sort-alpha-asc "></i></a></li>
+                                         <li><a href=""><i class="fa fa-home"></i></a></li>
+                                        <li><a href="api/Controlador/cadastroAluno"><i class="fa fa-plus-circle"></i></a></li>
+					<li><a href="api/Controlador/excluirAluno"><i class="fa fa-close "></i></a></li>
+					<li><a href="api/Controlador/atualizarAluno"><i class="fa fa-refresh"></i></a></li>
+					<li><a href="api/Controlador/buscarAluno"><i class="fa fa-search"></i></a></li>
+					<li><a href="api/Controlador/aluno/listar"><i class="fa fa-sort-alpha-asc "></i></a></li>
 				
 
 				</ul>
@@ -101,12 +106,12 @@
 					
                                         <li><a href="#"></a></li>
                                         <li><a href="#"></a></li>
-                                        <li><a href="index">Tela Inicial</a></li>
-					<li><a href="cadastroAluno" >Cadastrar Aluno</a></li>
-					<li><a href="excluirAluno" >Excluir Aluno</a></li>
-					<li><a href="" >Alterar Dados</a></li>
-					<li><a href="buscarAluno" >Pesquisar Aluno</a></li>
-					<li><a href="aluno/listar" >Listar Alunos</a></li>
+                                        <li><a href="">Tela Inicial</a></li>
+					<li><a href="api/Controlador/cadastroAluno" >Cadastrar Aluno</a></li>
+					<li><a href="api/Controlador/excluirAluno" >Excluir Aluno</a></li>
+					<li><a href="api/Controlador/atualizarAluno" >Alterar Dados</a></li>
+					<li><a href="api/Controlador/buscarAluno" >Pesquisar Aluno</a></li>
+					<li><a href="api/Controlador/aluno/listar" >Listar Alunos</a></li>
 				
 				</ul>
 			</div>
