@@ -87,14 +87,15 @@
 			<div class="icon">
 				<ul>
 					</br></br></br></br>
-					<li><a href="index"><i class="fa fa-home "></i></a></li>
-					<li><a href=""><i class="fa fa-plus-circle"></i></a></li>
+					<li><a href=""><i></i></a></li>
+                                        <li><a href=""><i></i></a></li>
+                                         <li><a href="index"><i class="fa fa-home"></i></a></li>
+                                        <li><a href=""><i class="fa fa-plus-circle"></i></a></li>
 					<li><a href="excluirAluno"><i class="fa fa-close "></i></a></li>
-					<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-					<li><a href="#"><i class="fa fa-search"></i></a></li>
-					<li><a href="About"><i class="	fa fa-sort-alpha-asc "></i></a></li>
-					<li><a href="#"><i class="fa fa-male"></i></a></li>
-					<li><a href="#"><i class="fa fa-edit "></i></a></li>
+					<li><a href="atualizarAluno"><i class="fa fa-refresh"></i></a></li>
+					<li><a href="buscarAluno"><i class="fa fa-search"></i></a></li>
+					<li><a href="aluno/listar"><i class="fa fa-sort-alpha-asc "></i></a></li>
+				
 
 				</ul>
 			</div>
@@ -102,18 +103,21 @@
 			<div class="text">
 				<ul>
 				    </br></br></br></br>
-					<li><a href="index">Tela Inicial</a></li>
-					<li><a href="" >Cadastrar Aluno</a></li>
+					
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="index">Tela Inicial</a></li>
+					<li><a href="cadastroAluno" >Cadastrar Aluno</a></li>
 					<li><a href="excluirAluno" >Excluir Aluno</a></li>
-					<li><a href="#" >Alterar Dados</a></li>
-					<li><a href="#" >Pesquisar Aluno</a></li>
-					<li><a href="#" >Listar Alunos</a></li>
-					<li><a href="#" >Avaliar Aluno</a></li>
-					<li><a href="#" >Passar Treino</a></li>
+					<li><a href="" >Alterar Dados</a></li>
+					<li><a href="buscarAluno" >Pesquisar Aluno</a></li>
+					<li><a href="aluno/listar" >Listar Alunos</a></li>
+				
 				</ul>
 			</div>
  
     </div>
+
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
